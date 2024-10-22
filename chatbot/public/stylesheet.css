@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0eded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1{
+    margin-bottom: 2%;
+}
+
+#chat-container{
+    width: 50vw;
+    background-color: white;
+    border: 1px solid rgb(196, 195, 195);;
+    padding: 2%;
+    box-shadow: 0 4px 8px rgb(196, 195, 195);;
+}
+
+
+#messages{
+    height: 30vw;
+    border: 1px solid rgb(196, 195, 195);
+    padding: 2%;
+    margin-bottom: 2%;
+    overflow-y: auto;
+}
+
+#user-input{
+    width: 48vw;
+    padding: 2%;
+    border: 1px solid rgb(196, 195, 195);
+    margin-bottom: 2%;
+}
+
+#send-btn {
+    background-color: #3d80ec;
+    color: white;
+    width: 10%;
+    border: none;
+    font-size: small;
+    padding: 2%;
+}
+
+#send-btn:hover {
+    background-color: #3170d6;
+}
