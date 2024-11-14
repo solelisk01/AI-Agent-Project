@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>AI Chatbot</title>
+  </head>
+
+    <body>
+      <header>
+          <h1>Welcome to the Chatbot Homepage</h1>
+      </header>
+  
+      <main>
+        <p>This chatbot powered by OpenAI is designed to assist you with various queries. Click the button below to start chatting!</p>
+
+        <form id="participant-form" action="/chat.html">
+          <label for="participantID">Enter your Participant ID:</label>
+          <input type="text" id="participantID" name="participantID" required>
+          <button type="submit">Start Chat</button>
+        </form>
+
+        <!-- <button><a href="./chat.html">Go to Chatbot</a></button> -->
+      </main>
+  
+      <footer>
+          <p>&copy; 2024 Chatbot Inc. All rights reserved.</p>
+      </footer>
+  
+  </body>
+
+  <script>
+    document.getElementById('participant-form').addEventListener('submit', function(event) {
+      const participantID = document.getElementById('participantID').value;
+      // Save the Participant ID in localStorage
+      localStorage.setItem('participantID', participantID);  
+    });
+  </script>
+</html>
